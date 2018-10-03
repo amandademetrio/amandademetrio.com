@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<title>Commity Documentation - Single Page Template</title>
+</head>
+<body>
+
+<!-- END FOOTER SECTION ############################################### -->
+
+
+<header>
+<section class="copyright">
+
+	<div class="row">
+	
+			
+			<a href="http://themeforest.net/user/Supview"><img src="img/logo-supview.png" alt="chocolathemes"></a>
+
+	
+	</div>
+
+</section>
+
+	<h1>Commity Template : Documentation</h1>
+</header>
+<section class="cd-faq">
+	<ul class="cd-faq-categories">
+		<li><a class="selected" href="#basics">Installation</a></li>
+		<li><a href="#mobile">Customize</a></li>
+		<li><a href="#sources">Sources</a></li>
+
+	</ul> <!-- cd-faq-categories -->
+
+	<div class="cd-faq-items">
+		<ul id="basics" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Installation</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do i upload the template?</a>
+				<div class="cd-faq-content">
+					<p>You can simply drop all the folder "COMMITY1.1" into your ftp from your website. <br><br>If you don't have a program for uploading it, i would suggest you to download FileZilla ( <a href="https://filezilla-project.org/">https://filezilla-project.org/</a> ) It's an open source software  free of charge under the terms of the GNU General Public License.</p><br>
+					
+					<p>Here is a tutorial for FileZilla : <a href="http://www.siteground.com/tutorials/ftp/filezilla.htm">http://www.siteground.com/tutorials/ftp/filezilla.htm</a></p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+		</ul> <!-- cd-faq-group -->
+
+		<ul id="mobile" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Customization</h2></li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do i edit the content?</a>
+				<div class="cd-faq-content">
+					<p>All the content are on the HTML File ( index.html ).</p><br>
+					<p>This theme is a one page portfolio. All of the information within the main content area is nested within a div with an id of "primaryContent". The general template structure is the same throughout the template. Here is the general structure looks like.</p>
+					<br><br>
+					<img src="img/htmlstructure.png" alt="HTML Structure" />
+					<br><br>
+					<p>As you can see, it's pretty well commented, you'll found easy what you are looking for with a simple CTRL+F ( or CMD+F on Apple Keyboard ) on your edit software.</p>
+					<br>
+		<p>if you are comfortable with HTML&CSS, you can have take a look on the Basic Gumby Grid framework ( <a target="_blank" href="http://gumbyframework.com/docs/grid/#!/basic-grid">http://www.gumbyframework.com</a> ), you'll found how to modify correctly the width of the different element into your future website.</p>
+
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do i edit the color of an element?</a>
+				<div class="cd-faq-content">
+					<p>This is super easy! You have to open the main stylesheet file ( style.css ), once open you'll found a table of content, here is this table:</p>
+<br><br>
+
+<pre>
+/*
+
+	
+	COMMITY TEMPLATE V1.0 BY SUPVIEW.BE
+	
+
+	01. FONT FACE
+	02. GENERALS SETTINGS
+	03. NAVIGATION SETTINGS
+	04. HEADER SETTINGS 
+	05. METHOD SETTINGS 
+	06. WORKS SETTINGS 
+	08. CREW SETTINGS 
+	09. CONTACT INFO SETTINGS
+	10. INTERSECTION ( START TODAY PARALLAX BG )
+	11. CONTACT INFO SETTINGS 
+	12. MAIL US SETTINGS 
+	13. FOOTER SETTINGS 
+	14. MEDIA QUERIES  
+
+
+		
+*/
+</pre>
+<br><br>
+<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down of do CTRL + F until you find the appropriate style that needs to be edited.</p> 
+		
+
+
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do i add a portfolio item?</a>
+				<div class="cd-faq-content">
+				
+					
+						<p>- Copy the "li" element from the HTML File</p><br>
+						<img src="img/liwork.png"><br><br>
+						<p>- Rename the class item by "work7" for exemple</p><br>
+						<p>- Scroll Down for copying the work-container</p><br>
+						<img src="img/workcontainer.png"><br><br>
+						<p>- Open the Work Preview Javascript file ( work_preview.js )</p><br>
+						<p>- Copy the function from the previous work (work6 here)</p><br>
+						<img src="img/jswork.png"><br><br>
+						<p>- That's it </p><br>
+
+				</div> <!-- cd-faq-content -->
+			</li>
+
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">I want a full height header and a background</a>
+				<div class="cd-faq-content">
+					<p>Search for the #header from the main stylesheet ( style.css ) <strong>line 331</strong></p><br><br>
+					<p>For a full 100% Height header, just put a "height:100%;".</p><br><br>
+					<p>For adding a background image add this line : "background-image:url('../img/yourimage.jpg')"</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">How to recieve the e-mail from the visitor?</a>
+				<div class="cd-faq-content">
+					<p>Just replace the e-mail on line 11 from the from_sender.php file by your e-mail.</p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+			<li>
+				<a class="cd-faq-trigger" href="#0">How work the scroll appear effect?</a>
+				<div class="cd-faq-content">
+					<p>I'm using the scrollMe plugin by Nick Pearson</p><br>
+					<p>The usage of the plugin is pretty well detailed on the page of the plugin : <a href="http://scrollme.nckprsn.com/">http://scrollme.nckprsn.com/</a>.
+				</div> <!-- cd-faq-content -->
+			</li>
+			
+			<li>
+				<a class="cd-faq-trigger" href="#0">How do a add a scrollTo on a link?</a>
+				<div class="cd-faq-content">
+					<p>Simply add the "goto" class on your link.</p><br><br>
+					<img src="img/scrollto.png">
+			
+				</div> <!-- cd-faq-content -->
+			</li>
+
+
+		</ul> <!-- cd-faq-group -->
+
+		<ul id="sources" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Sources</h2></li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Javascripts Files</a>
+				<div class="cd-faq-content">
+						
+		<ul class="js">
+		 
+			<li>- jQuery is a Javascript library that greatly reduces the amount of code that you must write</li><br><br>
+			<li>- Modernizr make an altenative for others navigators if they don't accept some code</li><br><br>
+			<li>- main.js is the main javascript file that call the differents plugins</li><br><br>
+			<li>- contact_form.js is used for the newsletter from the footer section</li><br><br>
+			<li>- classie.js is used for reduced height of the navigation when you scroll down</li><br><br>
+			<li>- jquery.flexslider.js is used for slider of clients section and agency section.</li><br><br>
+			<li>- jquery.parallax-1.1.3.js is used for the header background, which you can set up into the main.js file.</li><br><br>
+			<li>- mediaCheck.js allows you to disable or enable javascript code into the main.js</li><br><br>
+			<li>- waypoints.min.js is used in this case for the scrolling effect.</li><br><br>
+			<li>- jquery.scrollto.js is used for the smooth scrolling from the navigation.</li><br><br>
+			<li>- jquery.scrollme.js is used for the animations for each elements when they entering into the viewport. You can found how to set up a transition here : <a href="http://scrollme.nckprsn.com/">http://scrollme.nckprsn.com/</a></li><br><br>
+			<li>- yui.js is used for the header text which is scrolling with the viewport.</li>
+			
+		</ul>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">CSS Files</a>
+				<div class="cd-faq-content">
+		<ul class="js">
+			<li>- style.css is the main stylesheet that contains all of the specific stylings for the page.</li><br><br>
+			<li>- gumby.css is the framework that i'm using. you have nothing to touch there. It's for the row and column.</li><br><br>
+			<li>- font-awesome.min.css is the stylesheet used for the social icon.</li><br><br>
+			<li>- flexslider.css is the stylesheet used for slider of clients section and agency section.</li><br><br>
+			
+		</ul>
+				</div> <!-- cd-faq-content -->
+			</li>
+			<li>
+				<a class="cd-faq-trigger" href="#0">Live Preview</a>
+				<div class="cd-faq-content">
+					<p>Team member from Koji Ishibashi - <a href="http://www.behance.net/gallery/Employee-profile-photo-for-Brooklyn-Boulders/4690841">http://www.behance.net/gallery/Employee-profile-photo-for-Brooklyn-Boulders/4690841</a></p>
+					<div class="space"></div>
+					<p>Logo from Adrian Maedows - <a href="http://instagram.com/iiaspire">http://instagram.com/iiaspire</a>
+					<div class="space"></div>
+					<p>FAQ Template by CodyHouse - <a href="http:/www.codyhouse.co">http:/www.codyhouse.co</a></p>
+				</div> <!-- cd-faq-content -->
+			</li>
+
+		</ul> <!-- cd-faq-group -->
+
+	</div> <!-- cd-faq-items -->
+	<a href="#0" class="cd-close-panel">Close</a>
+</section> <!-- cd-faq -->
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
